@@ -1,0 +1,512 @@
+html,body{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Poppins", sans-serif;
+	 
+}
+
+
+.default-header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+  	background-color: #ffffff;
+  	z-index: 9;
+  	background-image: linear-gradient(#ffffff, #f5f5f5);
+}
+
+.container{
+	padding: 0px !important;
+}
+
+.navbar li a h5{
+	padding: 15px;
+}
+
+.navbar li{
+	width: 150px;
+}
+
+@media (max-width: 768px) {
+	.content-home{
+		margin-top: 200px !important;
+	}
+	.content{
+		margin-top: 200px !important;
+	}
+	#about_h{
+	font-size: 1rem !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar-collapse{
+		background-color: #f1f1f1;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container{
+    	max-width: 1700px;
+	}
+}
+
+.navbar .container{
+	margin: 0;
+}
+
+
+.navbar-nav li{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.logo{
+	display: flex;
+	width: 75% !important;
+	align-items: center;
+}
+
+.logo h5{
+	color: blue;
+}
+
+.content{
+	margin-top: 150px;
+	padding: 0;
+}
+
+.content-home{
+	margin-top: 150px;
+}
+
+.content-home img{
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#about_h{
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	background-color: #2b2b2b;
+	color: #ffffff;
+	font-size: 1.75rem;
+
+}
+
+.background-image-about{
+	background-image: url(../images/about-bg.png);
+	width: 100%;
+	height: 300px;
+  	background-size: 100% 100%;
+  	background-position: left;
+  	background-repeat: no-repeat;
+  	background-color: #fff9c4;
+}
+
+.background-content{
+	padding: 20px;
+	padding-top: 250px;
+	float: right;
+}
+
+.background-content span{
+	font-weight: 700;
+	font-size: 50px;
+}
+
+
+.card-class{
+	padding: 0px;
+	margin: 0px; 
+}
+
+.card-body{
+	margin-left: 30px;
+	margin-right: 30px; 
+	scroll-behavior: inherit;
+	display: flex;
+	float: left;
+}
+
+.card-class .card{
+  
+  border:0 !important;
+}
+
+.card-class .lnr{
+	font-size: 25px;
+	color: #4085f5;
+	margin-right: 20px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+.card-body div{
+	height: inherit;
+	align-items: center;
+	display: flex;
+}
+
+.content .team{
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	display: inline-block;
+
+}
+
+.content .team div{
+	justify-content: center;
+	text-align: center;
+	display: inline-block;
+}
+
+.content .team img{
+	width: 150px;
+	padding-bottom: 10px;
+	border-radius: 30%;
+}
+
+.content .team .col-3{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.contact-details h2{
+	padding: 5px;
+	background-color: #fff9c4;
+}
+
+.contact-details div{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.contact-details .contact-info{
+	padding: 45px;
+}
+
+.contact-details iframe{
+	height:250px;
+}
+
+
+.back{
+  text-align: center !important;
+  background-color: #fff9c4;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.title{
+	background-color: #fff9c4; 
+}
+
+.carousel{
+	display: flex !important;
+	text-align: center !important;
+	justify-content: center !important;
+}
+
+.carousel-inner .row{
+	justify-content: center;
+}
+
+.carousel-inner .data-1{
+	width: auto !important;
+	float: left;
+}
+
+.carousel .carousel-inner .data-1 img{
+	height: 350px;
+	padding: 20px;
+	width: 320px;
+}
+
+.carousel-item img{
+	height: 250px;
+	width: auto;
+	border: solid;
+	border-color: #ffffff;
+}
+ 
+.carousel-indicators li{
+	background-color: #b4cffa !important;
+}
+
+.carousel-indicators .active{
+	background-color: #4085f5 !important;
+}
+
+.famous-for h4{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff9c4;
+}
+
+.famous-for span{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.famous-for .lnr{
+	font-size: 35px;
+	padding-bottom: 2px;
+}
+
+.famous-for h5{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-weight: 700;
+}
+
+.famous-for p{
+	margin: 20px;
+}
+
+.content .leaflet{
+	max-height: inherit;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	display: flex;
+}
+
+.content .leaflet #iframeHolder{
+	max-height: inherit;
+	width: 100%;
+}
+
+.content .leaflet iframe{
+	width: 100%;
+	height: 500px;
+}
+
+.content .leaflet img{
+	max-width:50%;
+	max-height:100%;
+}
+
+.content .leaflet #visiting{
+	max-width:40% !important;
+	max-height:100%;
+}
+
+
+.content .leaflet .lnr{
+	display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 50;
+	color: #4085f5;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.product-list{
+	text-align: center;
+	width: inherit;
+	padding: 30px;
+	margin-bottom: 40px;
+	background-color: #fff9c4;
+}
+
+.product-list li{
+	float: left;
+	width: 25%;
+	cursor: pointer;
+}
+
+.modal-header{
+	justify-content: center;
+}
+
+.modal-body{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.page-footer{
+	background-color: #fff9c4;
+}
+
+.page-footer li{
+	float: left;
+}
+
+.page-footer .row{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+
+.imgdiv {
+    margin-left: 78px;
+    width: fill-content;
+    border: 1px solid #000;
+    float: left;
+    margin-top: 15px;
+}
+
+.h3border {
+    text-align: center;
+    font-size: 16px;
+    background-color: #AFADAD;
+    padding: 5px;
+    border-top: 1px solid #000;
+    font-weight: bold;
+    max-width: 250px;
+}
+
+.imgdiv img {
+	max-width:80% !important;
+    height: 260px;
+    width: 250px;
+}
+
+/* --------------------------*/
+
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}

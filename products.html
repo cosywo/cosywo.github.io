@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COSYWO&reg;Engineering Company</title>
+	<link rel="shortcut icon" href="images/logo.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-signin-client_id" content="420007527299-ohfutmn5dhvkm7vnh5bm6sdqgrl8qtao.apps.googleusercontent.com">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootref.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dbConnection.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+</head>
+<body>
+
+	<header class="default-header">
+                <nav class="navbar navbar-expand-lg  navbar-light">
+                    <div class="container">
+                    	<div class="logo">
+                    		<a class="navbar-brand" href="home.html">
+                            <img src="images/logo.png" alt="Mineral, Food Processing, Adhesives , Petroleum , Aluminium Paste, Laminates, Pesticides, Detergents, Water Treatment, Plastic Film, Perfume , Pharmaceutical , Paint, Steel, Confectionary, ">
+                         	</a>
+                         	<div>
+                          <h5><strong>COSYWO<sup>&reg;</sup> Engineering Company</strong></h5>
+                          <h7>Manufacturer And Exporter</h7><br>
+                          <h7>Performance <i class="fa fa-circle" aria-hidden="true" style="font-size:30%;padding: 10px;"></i>
+                             Quality<i class="fa fa-circle" aria-hidden="true" style="font-size:30%;padding: 10px;"></i>
+                             Quick Delivery
+                            </h7>
+                          </div>
+                    	</div>
+                          
+                          
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li><a href="home.html"><h5>Home</h5></a></li>
+                                <li><a href="about.html"><h5>About Us</h5></a></li>
+                                <li><a href="products.html"><h5>Products</h5></a></li>
+                                <li><a href="contact.html"><h5>Contact Us</h5></a></li>                              
+                            </ul>
+                          </div>                        
+                    </div>
+                </nav>
+    </header>
+
+
+    <div class="content">
+    	
+
+    <div class="product-list">
+      <ul class="list-unstyled">
+      <li><a id="button0" ><strong>Visiting Card</strong></a></li>
+      <li><a id="button1" ><strong>Roller/ Expander/ SS Tanks</strong></a></li>
+      <li><a id="button2" ><strong>Stirrer</strong></a></li>
+      <li><a id="button3" ><strong>Other Products</strong></a></li>
+      </ul>
+    </div>
+
+  <div class="leaflet">
+          <div id="iframeHolder"></div>
+          <span onclick="topFunction()" id="myBtn" class="lnr lnr-arrow-up-circle"></span>
+    </div>
+
+
+	</div>
+
+  <footer class="page-footer font-small blue pt-4 mt-4">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="row">
+
+    <div class="col-lg-3  col-md-12">
+      <h3 class=" text-center">Connect with us</h3>
+    </div>
+
+    <div class="col-lg-9 col-md-12">
+      <ul class="list-unstyled">
+          <li class="col-lg-3 col-md-12 pt-4">
+            <a id="B" href="https://www.facebook.com/cosywo/" class="fa fa-2x fa-facebook">&nbsp&nbsp</a>
+          </li>
+          <li class="col-lg-3 col-md-12 pt-4">
+            <a id="B" href="https://www.linkedin.com/in/shrikant-bhansali-711426141/" class="fa fa-2x fa-linkedin">&nbsp&nbsp</a>
+          </li>
+          <li class="col-lg-3 col-md-12 pt-4">
+            <a id="B" href="https://www.youtube.com/channel/UCKnsdCuDfy9mEY0_wQ-JWaQ" class="fa fa-2x fa-youtube">&nbsp&nbsp</a>
+          </li>
+          <li class="col-lg-3 col-md-12 pt-4">
+            <a id="B" href="https://www.instagram.com/cosywo/" class="fa fa-2x fa-instagram"></a>
+          </li>
+        </ul>
+    </div>
+    </div>
+
+  </div>
+  <div class="footer-copyright text-center py-3"> Copyright <i class="fa  fa-copyright" aria-hidden="true"></i> COSYWO <sup>&reg;</sup> Engineering Company : All Rights Reserved
+  </div>
+  
+
+</footer>
+
+
+	
+<script type="text/javascript">
+
+$(window).load(function () {
+    $('#button3').click();
+})
+
+$(function(){
+
+    $('#button0').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<img id="visiting" src="images/front_photos/0.jpg" alt="Chemical Dyestuff, Electronics, Aromatics, Perfume , Beverages, Plastic Film, Steel, Toiletries, Heat treatment, Textile, Pharmaceutical , Mineral, Ink, Plywood, Pesticides, " > </img>');
+                $('#button0').css("color","#4085f5");
+                $('#button1').css("color","#000000");
+                $('#button2').css("color","#000000");
+                $('#button3').css("color","#000000");
+        }
+    });
+
+
+    $('#button1').click(function(){ 
+
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<img src="images/front_photos/1_1.jpg" alt="Food Processing, Chemical Dyestuff, Pesticides, Laminates, Electronics, Confectionary , Heat treatment, Petroleum , Ink-Paints, Plywood, Corrugated Box , Adhesives , Mineral, Cosmetics , Toiletries, "> </img>');
+                $('#button0').css("color","#000000");
+                $('#button1').css("color","#4085f5");
+                $('#button2').css("color","#000000");
+                $('#button3').css("color","#000000");
+        }
+    });   
+
+    $('#button2').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<img src="images/front_photos/2_1.jpg" alt="Paint, Heat treatment, Food Processing, Adhesives , Petroleum , Perfume , Toiletries, Aluminium Paste, Beverages, Electronics, Paper, Plywood, Confectionary , Chemical Dyestuff, Composite Industries , "> </img>');
+                $('#button0').css("color","#000000");
+                $('#button1').css("color","#000000");
+                $('#button2').css("color","#4085f5");
+                $('#button3').css("color","#000000");
+        }
+    });
+
+    $('#button3').click(function(){ 
+        fetch('other-products.html')
+        .then(data => data.text())
+        .then(html => document.getElementById('iframeHolder').innerHTML = html);
+
+        $('#button0').css("color","#000000");
+        $('#button1').css("color","#000000");
+        $('#button2').css("color","#000000");
+        $('#button3').css("color","#4085f5");
+
+    });
+});
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>
