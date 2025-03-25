@@ -150,6 +150,11 @@ html,body{
 	display: flex;
 }
 
+.contact-details .contact-img{
+	border-radius: 0 !important;
+	width: 17rem !important;
+}
+
 .content .team{
 	width: 100%;
 	justify-content: center;
