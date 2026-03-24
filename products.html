@@ -1,190 +1,411 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>COSYWO&reg;Engineering Company</title>
-	<link rel="shortcut icon" href="images/logo.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-signin-client_id" content="420007527299-ohfutmn5dhvkm7vnh5bm6sdqgrl8qtao.apps.googleusercontent.com">
-
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootref.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="dbConnection.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-
+  <meta charset="UTF-8">
+  <title>Products — COSYWO&reg; Engineering Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse COSYWO's full range of industrial stirrers, SS tanks, rollers, expanders, eye pots and custom processing equipment.">
+  <link rel="shortcut icon" href="images/logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-	<header class="default-header">
-                <nav class="navbar navbar-expand-lg  navbar-light">
-                    <div class="container">
-                    	<div class="logo">
-                    		<a class="navbar-brand" href="index.html">
-                            <img src="images/logo.png" alt="Mineral, Food Processing, Adhesives , Petroleum , Aluminium Paste, Laminates, Pesticides, Detergents, Water Treatment, Plastic Film, Perfume , Pharmaceutical , Paint, Steel, Confectionary, ">
-                         	</a>
-                         	<div>
-                          <h5><strong>COSYWO<sup>&reg;</sup> Engineering Company</strong></h5>
-                          <h7>Manufacturer And Exporter</h7><br>
-                          <h7>Performance <i class="fa fa-circle" aria-hidden="true" style="font-size:30%;padding: 10px;"></i>
-                             Quality<i class="fa fa-circle" aria-hidden="true" style="font-size:30%;padding: 10px;"></i>
-                             Quick Delivery
-                            </h7>
-                          </div>
-                    	</div>
-                          
-                          
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="images/logo.png" alt="COSYWO Engineering Company" class="navbar__logo">
+        <div class="navbar__brand-text">
+          <span class="navbar__brand-name">COSYWO&reg; Engineering</span>
+          <span class="navbar__brand-sub">Manufacturer &amp; Exporter</span>
+        </div>
+      </a>
 
-                          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li><a href="index.html"><h5>Home</h5></a></li>
-                                <li><a href="about.html"><h5>About Us</h5></a></li>
-                                <li><a href="products.html"><h5>Products</h5></a></li>
-                                <li><a href="contact.html"><h5>Contact Us</h5></a></li>                              
-                            </ul>
-                          </div>                        
-                    </div>
-                </nav>
-    </header>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
 
-
-    <div class="content">
-    	
-
-    <div class="product-list">
-      <ul class="list-unstyled">
-      <li><a id="button0" ><strong>Visiting Card</strong></a></li>
-      <li><a id="button1" ><strong>Roller/ Expander/ SS Tanks</strong></a></li>
-      <li><a id="button2" ><strong>Stirrer</strong></a></li>
-      <li><a id="button3" ><strong>Other Products</strong></a></li>
+      <ul class="navbar__nav" id="navLinks">
+        <li><a href="index.html" class="navbar__link">Home</a></li>
+        <li><a href="about.html" class="navbar__link">About Us</a></li>
+        <li><a href="products.html" class="navbar__link">Products</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
       </ul>
+
+      <a href="contact.html" class="navbar__cta" id="navCta">Get in Touch</a>
     </div>
+  </nav>
 
-  <div class="leaflet">
-          <div id="iframeHolder"></div>
-          <span onclick="topFunction()" id="myBtn" class="lnr lnr-arrow-up-circle"></span>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Products</span>
+      </div>
+      <h1>Our Products</h1>
+      <p>Custom-built industrial equipment for over 40 product variants across stirrers, tanks, rollers, and more.</p>
     </div>
+  </section>
 
+  <!-- Products Section -->
+  <section class="section">
+    <div class="container">
 
-	</div>
+      <!-- Filter Bar -->
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="stirrers">Stirrers &amp; Agitators</button>
+        <button class="filter-btn" data-filter="tanks">Tanks &amp; Vessels</button>
+        <button class="filter-btn" data-filter="rollers">Rollers &amp; Expanders</button>
+        <button class="filter-btn" data-filter="eyepots">Eye Pots</button>
+      </div>
 
-  <footer class="page-footer font-small blue pt-4 mt-4">
+      <!-- Product Grid -->
+      <div class="product-grid">
 
-  <div class="container-fluid text-center text-md-left">
+        <!-- Stirrers & Agitators -->
+        <div class="product-card fade-in" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/24.jpg" alt="Hollow Adjustable Shaft Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">Hollow Adjustable Shaft Stirrer</div>
+          </div>
+        </div>
 
-    <div class="row">
+        <div class="product-card fade-in fade-in-delay-1" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/16.jpg" alt="SS Movable Stand with High Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Movable Stand with High Speed Stirrer</div>
+          </div>
+        </div>
 
-    <div class="col-lg-3  col-md-12">
-      <h3 class=" text-center">Connect with us</h3>
+        <div class="product-card fade-in fade-in-delay-2" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/17.jpg" alt="Oil Agitator">
+          <div class="product-card__body">
+            <div class="product-card__name">Oil Agitator</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/18.jpg" alt="Hollow Adjustable Removable Washable Shaft Stirrer with MS Stand">
+          <div class="product-card__body">
+            <div class="product-card__name">Hollow Adjustable Removable Stirrer with MS Stand</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/4.jpg" alt="SS Movable Stand with High Speed Stirrer with FLP Motor">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Movable Stand — High Speed Stirrer with FLP Motor</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/5.jpg" alt="MS Movable Stand with Single Shaft Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">MS Movable Stand — Single Shaft Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/25.jpg" alt="10 HP High Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">10 HP High Speed Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/41.jpg" alt="SS Movable Stand with Hollow Adjustable Shaft Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Movable Stand — Hollow Adjustable Shaft Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/44.jpg" alt="5 HP High Speed Stirrer 96 inch long">
+          <div class="product-card__body">
+            <div class="product-card__name">5 HP High Speed Stirrer (96" Long)</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="stirrers">
+          <img class="product-card__img" src="images/front_photos/1.jpg" alt="15 HP High Speed Homogeniser">
+          <div class="product-card__body">
+            <div class="product-card__name">15 HP High Speed Homogeniser</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="stirrers">
+          <img class="product-card__img" src="images/front_photos/18.jpg" alt="High Speed Emulsifier with S Type Blade">
+          <div class="product-card__body">
+            <div class="product-card__name">High Speed Emulsifier / Disintegrator with S Type Blade</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="stirrers">
+          <img class="product-card__img" src="images/front_photos/20.jpg" alt="Stirrer Wall Mounting Arrangement">
+          <div class="product-card__body">
+            <div class="product-card__name">Stirrer Wall Mounting Arrangement</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="stirrers">
+          <img class="product-card__img" src="images/front_photos/13.jpg" alt="Geared Agitator with PP Lined Stirrer Shaft">
+          <div class="product-card__body">
+            <div class="product-card__name">Geared Agitator with PP Lined Stirrer Shaft</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/13.jpg" alt="High Shear Saw Tooth Cutter Blade">
+          <div class="product-card__body">
+            <div class="product-card__name">High Shear Blade / Saw Tooth Cutter Blade</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/14.jpg" alt="Propeller Blade on Stirrer Shaft">
+          <div class="product-card__body">
+            <div class="product-card__name">Propeller Blade — Openable &amp; Adjustable on Stirrer Shaft</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="stirrers">
+          <img class="product-card__img" src="images/photo/26.jpg" alt="High Shear Blade with Collar Adjustable">
+          <div class="product-card__body">
+            <div class="product-card__name">High Shear Blade with Collar — Adjustable on Stirrer Shaft</div>
+          </div>
+        </div>
+
+        <!-- Tanks & Vessels -->
+        <div class="product-card fade-in" data-category="tanks">
+          <img class="product-card__img" src="images/photo/1.jpg" alt="SS Tank">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="tanks">
+          <img class="product-card__img" src="images/photo/2.jpg" alt="SS Tank with Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank with Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="tanks">
+          <img class="product-card__img" src="images/photo/3.jpg" alt="SS Size Cooker">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Size Cooker</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="tanks">
+          <img class="product-card__img" src="images/photo/6.jpg" alt="SS Tank with Hydraulic Lifting and Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank with Hydraulic Lifting Arrangement &amp; Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="tanks">
+          <img class="product-card__img" src="images/photo/35.jpg" alt="SS Tank with Removable Hollow Shaft Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank — Removable Hollow Adjustable Shaft Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="tanks">
+          <img class="product-card__img" src="images/photo/36.jpg" alt="SS Movable Tank with Lid">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Movable Tank with Lid</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="tanks">
+          <img class="product-card__img" src="images/photo/38.jpg" alt="SS Tank with High Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank with High Speed Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="tanks">
+          <img class="product-card__img" src="images/photo/29.jpg" alt="SS Tank with High Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank with High Speed Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="tanks">
+          <img class="product-card__img" src="images/photo/30.jpg" alt="SS Tank with Slow Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank with Slow Speed Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="tanks">
+          <img class="product-card__img" src="images/photo/31.jpg" alt="SS Tank with High Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Tank with High Speed Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="tanks">
+          <img class="product-card__img" src="images/photo/23.jpg" alt="MS Jacketed SS Gum Boiling Pan with Slow Speed Stirrer">
+          <div class="product-card__body">
+            <div class="product-card__name">MS Jacketed SS Gum Boiling Pan with Slow Speed Stirrer</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="tanks">
+          <img class="product-card__img" src="images/photo/43.jpg" alt="Printing Ink Mixing Kettle with Tilting Arrangement">
+          <div class="product-card__body">
+            <div class="product-card__name">Printing Ink Mixing Kettle — SS Tank Tilting Arrangement</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="tanks">
+          <img class="product-card__img" src="images/front_photos/24.jpg" alt="SS Flok Dyeing Tank with Heating Coil">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Flok Dyeing Tank with Heating Coil &amp; Filter Arrangement</div>
+          </div>
+        </div>
+
+        <!-- Rollers & Expanders -->
+        <div class="product-card fade-in" data-category="rollers">
+          <img class="product-card__img" src="images/front_photos/25.jpg" alt="Teflon Coated Roller">
+          <div class="product-card__body">
+            <div class="product-card__name">Teflon Coated Roller</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="rollers">
+          <img class="product-card__img" src="images/front_photos/23.jpg" alt="SS Fluted Roller">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Fluted Roller</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-2" data-category="rollers">
+          <img class="product-card__img" src="images/front_photos/10.jpg" alt="Industrial Rollers">
+          <div class="product-card__body">
+            <div class="product-card__name">Industrial Rollers</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-3" data-category="rollers">
+          <img class="product-card__img" src="images/front_photos/22.jpg" alt="Single Curved Bar Expander with SS Shaft">
+          <div class="product-card__body">
+            <div class="product-card__name">Single Curved Bar Expander with SS Shaft</div>
+          </div>
+        </div>
+
+        <!-- Eye Pots -->
+        <div class="product-card fade-in" data-category="eyepots">
+          <img class="product-card__img" src="images/photo/21.jpg" alt="SS Revolving Eye Pot with Aluminium Body">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Revolving Eye Pot with Aluminium Body</div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in fade-in-delay-1" data-category="eyepots">
+          <img class="product-card__img" src="images/photo/22.jpg" alt="SS Eye Pot">
+          <div class="product-card__body">
+            <div class="product-card__name">SS Eye Pot</div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /product-grid -->
+
     </div>
+  </section>
 
-    <div class="col-lg-9 col-md-12">
-      <ul class="list-unstyled">
-          <li class="col-lg-3 col-md-12 pt-4">
-            <a id="B" href="https://www.facebook.com/cosywo/" class="fa fa-2x fa-facebook">&nbsp&nbsp</a>
-          </li>
-          <li class="col-lg-3 col-md-12 pt-4">
-            <a id="B" href="https://www.linkedin.com/company/cosywo-engineering/" class="fa fa-2x fa-linkedin">&nbsp&nbsp</a>
-          </li>
-          <li class="col-lg-3 col-md-12 pt-4">
-            <a id="B" href="https://www.youtube.com/channel/UCKnsdCuDfy9mEY0_wQ-JWaQ" class="fa fa-2x fa-youtube">&nbsp&nbsp</a>
-          </li>
-          <li class="col-lg-3 col-md-12 pt-4">
-            <a id="B" href="https://www.instagram.com/cosywo/" class="fa fa-2x fa-instagram"></a>
-          </li>
-        </ul>
+  <!-- CTA -->
+  <section class="section section--alt">
+    <div class="container" style="text-align: center;">
+      <div class="section__header fade-in" style="margin-bottom: 28px;">
+        <span class="section__tag">Custom Orders</span>
+        <h2 class="section__title">Need Something Specific?</h2>
+        <p class="section__desc">We specialise in custom-built equipment. No matter how complex your requirement, we have the expertise to deliver.</p>
+      </div>
+      <div class="fade-in">
+        <a href="contact.html" class="btn btn--primary">Contact Us for Custom Orders</a>
+      </div>
     </div>
-    </div>
+  </section>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+      <div class="lightbox__footer">
+        <span class="lightbox__name" id="lightboxName"></span>
+      </div>
+    </div>
   </div>
-  <div class="footer-copyright text-center py-3"> Copyright <i class="fa  fa-copyright" aria-hidden="true"></i> COSYWO <sup>&reg;</sup> Engineering Company : All Rights Reserved
-  </div>
-  
 
-</footer>
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <img src="images/logo.png" alt="COSYWO" class="footer__logo">
+            <span class="footer__brand-name">COSYWO&reg; Engineering</span>
+          </div>
+          <p class="footer__tagline">Trusted manufacturer &amp; exporter of industrial mixing and processing equipment since 1960. Performance &bull; Quality &bull; Quick Delivery.</p>
+        </div>
 
-	
-<script type="text/javascript">
+        <div class="footer__col">
+          <h5>Navigation</h5>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
 
-$(window).load(function () {
-    $('#button3').click();
-})
+        <div class="footer__col">
+          <h5>Connect</h5>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/cosywo/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/cosywo-engineering/" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCKnsdCuDfy9mEY0_wQ-JWaQ" class="footer__social-link" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0F172A"/></svg>
+            </a>
+            <a href="https://www.instagram.com/cosywo/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="#0F172A"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#0F172A" stroke-width="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
-$(function(){
+      <div class="footer__bottom">
+        <span class="footer__copy">Copyright &copy; 2025 COSYWO&reg; Engineering Company. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
 
-    $('#button0').click(function(){ 
-        if(!$('#iframe').length) {
-                $('#iframeHolder').html('<img id="visiting" src="images/front_photos/0.jpg" alt="Chemical Dyestuff, Electronics, Aromatics, Perfume , Beverages, Plastic Film, Steel, Toiletries, Heat treatment, Textile, Pharmaceutical , Mineral, Ink, Plywood, Pesticides, " > </img>');
-                $('#button0').css("color","#4085f5");
-                $('#button1').css("color","#000000");
-                $('#button2').css("color","#000000");
-                $('#button3').css("color","#000000");
-        }
-    });
-
-
-    $('#button1').click(function(){ 
-
-        if(!$('#iframe').length) {
-                $('#iframeHolder').html('<img src="images/front_photos/1_1.jpg" alt="Food Processing, Chemical Dyestuff, Pesticides, Laminates, Electronics, Confectionary , Heat treatment, Petroleum , Ink-Paints, Plywood, Corrugated Box , Adhesives , Mineral, Cosmetics , Toiletries, "> </img>');
-                $('#button0').css("color","#000000");
-                $('#button1').css("color","#4085f5");
-                $('#button2').css("color","#000000");
-                $('#button3').css("color","#000000");
-        }
-    });   
-
-    $('#button2').click(function(){ 
-        if(!$('#iframe').length) {
-                $('#iframeHolder').html('<img src="images/front_photos/2_1.jpg" alt="Paint, Heat treatment, Food Processing, Adhesives , Petroleum , Perfume , Toiletries, Aluminium Paste, Beverages, Electronics, Paper, Plywood, Confectionary , Chemical Dyestuff, Composite Industries , "> </img>');
-                $('#button0').css("color","#000000");
-                $('#button1').css("color","#000000");
-                $('#button2').css("color","#4085f5");
-                $('#button3').css("color","#000000");
-        }
-    });
-
-    $('#button3').click(function(){ 
-        fetch('other-products.html')
-        .then(data => data.text())
-        .then(html => document.getElementById('iframeHolder').innerHTML = html);
-
-        $('#button0').css("color","#000000");
-        $('#button1').css("color","#000000");
-        $('#button2').css("color","#000000");
-        $('#button3').css("color","#4085f5");
-
-    });
-});
-
-mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
