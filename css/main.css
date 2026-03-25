@@ -651,12 +651,13 @@ p {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  background: var(--color-surface);
 }
 
 .about-story__image img {
   width: 100%;
   height: 380px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .about-story__content {
